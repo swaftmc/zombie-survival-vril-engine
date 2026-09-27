@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # QCVM tests
 # ----
 # In-engine QCVM opcode behavior testing.

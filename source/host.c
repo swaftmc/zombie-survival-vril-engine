@@ -929,7 +929,7 @@ void Host_Init (quakeparms_t *parms)
 #endif
 	if (cls.state != ca_dedicated && !vid_headless)
 		Menu_Main_Set();
-	Sys_Printf ("========Nazi Zombies Portable Initialized=========\n");	
+	Sys_Printf ("========Zombie Survival Portable Initialized=========\n");	
 }
 
 

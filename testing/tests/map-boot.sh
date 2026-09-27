@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # map-boot tests
 # ----
 # Verifies that we can boot into all of our
@@ -59,7 +59,7 @@ function run_mapboot_test()
         write_test_setup "${pretty_bsp}"
 
         # Load emulator and attempt to boot map
-        print_info "Loading Nazi Zombies: Portable via [${EMULATOR_BIN}] with map [${pretty_bsp}].."
+        print_info "Loading Zombie Survival: Portable via [${EMULATOR_BIN}] with map [${pretty_bsp}].."
         local command=$(run_nzportable "1" "${content_path}/${pretty_bsp}.bmp" "${MODE}")
         echo "[${command}]"
         ${command} > "${launch_log}" 2>&1 || emulator_failed="1"

@@ -300,7 +300,7 @@ void GL_BuildLightmaps (void);
 void GL_MakeAliasModelDisplayLists (model_t *m, aliashdr_t *hdr);
 void GL_Set2D (void);
 void GL_SubdivideSurface (msurface_t *fa);
-void GL_Surface (msurface_t *fa); // dr_mabuse1981: fuck you lag.
+void GL_Surface (msurface_t *fa); // dr_mabuse1981: begone lag.
 void EmitWaterPolys (msurface_t *fa);
 void EmitSkyPolys (msurface_t *fa);
 void EmitReflectivePolys (msurface_t *fa);

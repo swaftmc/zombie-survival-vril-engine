@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # generate-source
 # ----
 # Generates source bitmaps for levels validated
@@ -52,7 +52,7 @@ function run_generation()
         write_test_setup "${pretty_bsp}"
 
         # Load emulator and attempt to boot map
-        print_info "Loading Nazi Zombies: Portable via [${EMULATOR_BIN}] with map [${pretty_bsp}].."
+        print_info "Loading Zombie Survival: Portable via [${EMULATOR_BIN}] with map [${pretty_bsp}].."
         local command=$(run_nzportable "1" "${CONTENT_DIR}/blank.png" "${MODE}")
         echo "[${command}]"
         ${command} > "${launch_log}" 2>&1 || map_failed="1"

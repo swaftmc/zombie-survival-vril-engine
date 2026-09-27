@@ -142,7 +142,7 @@ void VID_Init(unsigned char *palette)
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
-	sdl_window = SDL_CreateWindow("Nazi Zombies: Portable", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+	sdl_window = SDL_CreateWindow("Zombie Survival: Portable", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
 		sdl_window_width, sdl_window_height, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI |
 		(vid_fullscreen.value ? SDL_WINDOW_FULLSCREEN_DESKTOP : 0));
 	if (!sdl_window) Sys_Error("SDL_CreateWindow: %s", SDL_GetError());

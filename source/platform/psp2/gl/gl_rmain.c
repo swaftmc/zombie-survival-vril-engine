@@ -1428,7 +1428,7 @@ void R_SetFrustum (void)
 	}
 	else
 	{
-		// naievil -- hi, this is floored because any basically non integer(? i think short precision float) value made the rendering all fucked up
+		// naievil -- hi, this is floored because any basically non integer(? i think short precision float) value made the rendering all messed up
 		// so hope this helps (it does). This reduces some accuracy but it is not as important
 		// rotate VPN right by FOV_X/2 degrees
 		RotatePointAroundVector( frustum[0].normal, vup, vpn, floorf(-(90-r_refdef.fov_x / 2 )) );

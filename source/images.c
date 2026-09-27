@@ -1,5 +1,5 @@
 /*
-NZ:P Universal Image loading
+ZSP Universal Image loading
 Copyright (C) 2025
 
 This program is free software; you can redistribute it and/or

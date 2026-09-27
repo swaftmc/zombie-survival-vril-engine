@@ -723,9 +723,9 @@ void Menu_DrawMapButton (int order, int button_index, int usermap_index, int map
 		int menu_badges_width = (72*scale);
 
 		switch(map_category) {
-			case MAP_CATEGORY_NZPBETA: s = 0; t = 0; badge_name = "NZ:P BETA (2011)"; break;
+			case MAP_CATEGORY_NZPBETA: s = 0; t = 0; badge_name = "ZSP BETA (2011)"; break;
 			case MAP_CATEGORY_WAW: s = 0.25; t = 0; badge_name = "WORLD AT WAR"; break;
-			case MAP_CATEGORY_NZP: s = 0; t = 0.5; badge_name = "NZ:P ORIGINAL"; break;
+			case MAP_CATEGORY_NZP: s = 0; t = 0.5; badge_name = "ZSP ORIGINAL"; break;
 			case MAP_CATEGORY_BLACKOPSDS: s = 0.25; t = 0.5; badge_name = "BLACK OPS (DS)"; break;
 			case MAP_CATEGORY_USER: s = 0.5; t = 0; badge_name = "USERMAP"; break;
 		}

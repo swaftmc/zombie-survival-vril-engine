@@ -1042,7 +1042,7 @@ HUD_EndScreen(void)
         }
     }
 
-    snprintf(text, sizeof(text), "Nazi Zombies: Portable %s", game_build_date);
+    snprintf(text, sizeof(text), "Zombie Survival: Portable %s", game_build_date);
     Draw_ColoredString(2 * vid.scale, vid.height - 9 * vid.scale,
       text, 255, 255, 255, 255, vid.scale);
 } /* HUD_EndScreen */
@@ -1501,7 +1501,7 @@ HUD_DrawRoundIntro(void)
     HUD_WorldText((int) (localpha * 255));
     if (!has_chaptertitle)
         Draw_ColoredString(6 * vid.scale + HUD_UltrawideOffset(), vid.height / 2 + 10 * vid.scale,
-          "'Nazi Zombies'", 255, 255, 255, (int) (localpha * 255), vid.scale);
+          "'Zombie Survival'", 255, 255, 255, (int) (localpha * 255), vid.scale);
 } /* HUD_DrawRoundIntro */
 
 void

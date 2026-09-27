@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # Test suite utility functions.
 # ----
 # Prepares a testing environment targeting

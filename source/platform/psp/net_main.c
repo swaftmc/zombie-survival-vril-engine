@@ -719,7 +719,7 @@ qboolean NET_CanSendMessage (qsocket_t *sock)
 		Sys_FileWrite (vcrFile, &vcrSendMessage, 20);
 	}
 	//Con_Printf("Cansend = %i \n",r);//blubs : this is why it doesn't send the next signonreply
-	//return r; //blubs, not sure if this will fuck us up later
+	//return r; //blubs, not sure if this will bite us later
 	//if(r != 1)
 	//	Con_Printf("Error, couldn't send msg, r:%i\n",r);
 	return r;

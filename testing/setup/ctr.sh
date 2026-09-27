@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # Nintendo 3DS test code init
 # ----
 # Prepares a testing environment targeting
@@ -68,7 +68,7 @@ function download_azahar
 
 function obtain_nzportable
 {
-	print_info "Obtaining latest Nazi Zombies: Portable 3DS release.."
+	print_info "Obtaining latest Zombie Survival: Portable 3DS release.."
 	cd "${working_dir}"
 	rm -f nzportable-3ds.zip
 	wget -q https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip

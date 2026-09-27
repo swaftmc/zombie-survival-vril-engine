@@ -23,7 +23,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "nzportable_def.h"
 
-// cypress -- who the fuck needs a 250kB zone block?? what?? restoring to 50kB.
+// cypress -- who needs a 250kB zone block?? what?? restoring to 50kB.
 #define DYNAMIC_SIZE	0x40000
 
 #define	ZONEID	0x1d4a11

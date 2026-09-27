@@ -367,7 +367,7 @@ void Draw_AdvancedCharacter(int x, int y, int num, int alpha, float scale, unsig
 
 			// guard it to avoid spamming moduli
 			if (dither_factor != 0) {
-				// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+				// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 				if (pixel_tracker % dither_factor != 0)
 					continue;
 			}
@@ -413,7 +413,7 @@ void Draw_AdvancedCharacter(int x, int y, int num, int alpha, float scale, unsig
 
 			// guard it to avoid spamming moduli
 			if (dither_factor != 0) {
-				// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+				// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 				if (pixel_tracker % dither_factor != 0)
 					continue;
 			}
@@ -932,7 +932,7 @@ void Draw_AdvancedStretchPicColor (int x, int y, int pic, int width, int height,
 
 				// guard it to avoid spamming moduli
 				if (dither_factor != 0) {
-					// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+					// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 					if (pixel_tracker % dither_factor != 0)
 						continue;
 				}
@@ -985,7 +985,7 @@ void Draw_AdvancedStretchPicColor (int x, int y, int pic, int width, int height,
 
 				// guard it to avoid spamming moduli
 				if (dither_factor != 0) {
-					// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+					// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 					if (pixel_tracker % dither_factor != 0)
 						continue;
 				}
@@ -1068,7 +1068,7 @@ void Draw_AdvancedPic (int x, int y, int pic, int alpha, unsigned char palette_h
 
 					// guard it to avoid spamming moduli
 					if (dither_factor != 0) {
-						// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+						// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 						if (pixel_tracker % dither_factor != 0)
 							continue;
 					}
@@ -1103,7 +1103,7 @@ void Draw_AdvancedPic (int x, int y, int pic, int alpha, unsigned char palette_h
 
 					// guard it to avoid spamming moduli
 					if (dither_factor != 0) {
-						// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+						// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 						if (pixel_tracker % dither_factor != 0)
 							continue;
 					}
@@ -1145,7 +1145,7 @@ void Draw_AdvancedPic (int x, int y, int pic, int alpha, unsigned char palette_h
 
 				// guard it to avoid spamming moduli
 				if (dither_factor != 0) {
-					// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+					// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 					if (pixel_tracker % dither_factor != 0)
 						continue;
 				}
@@ -1584,7 +1584,7 @@ void Draw_Fill (int x, int y, int w, int h, int r, int g, int b, int alpha, int 
 					pixel_tracker++;
 					// guard it to avoid spamming moduli
 					if (dither_factor != 0) {
-						// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+						// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 						if (pixel_tracker % dither_factor != 0)
 							continue;
 					}
@@ -1610,7 +1610,7 @@ void Draw_Fill (int x, int y, int w, int h, int r, int g, int b, int alpha, int 
 
 					// guard it to avoid spamming moduli
 					if (dither_factor != 0) {
-						// motolegacy -- this actually doesnt work as originally intended but it looks fucking awesome so im keeping it
+						// motolegacy -- this actually doesnt work as originally intended but it looks really awesome so im keeping it
 						if (pixel_tracker % dither_factor != 0)
 							continue;
 					}

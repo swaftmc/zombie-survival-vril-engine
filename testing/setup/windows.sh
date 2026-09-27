@@ -23,7 +23,7 @@ function install_dependencies()
 
 function obtain_nzportable()
 {
-	print_info "Obtaining NZ:P content.."
+	print_info "Obtaining ZSP content.."
 	cd "${working_dir}"
 	rm -f nzportable-3ds.zip
 	wget -q https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip

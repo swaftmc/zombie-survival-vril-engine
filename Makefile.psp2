@@ -157,7 +157,7 @@ _build_info.h:
 
 $(VPK): $(VELF)
 	vita-make-fself -c -s $< $(EBOOT)
-	vita-mksfoex -s TITLE_ID=$(TITLE) -d ATTRIBUTE2=12 "Nazi Zombies: Portable" $(PARAM_SFO)
+	vita-mksfoex -s TITLE_ID=$(TITLE) -d ATTRIBUTE2=12 "Zombie Survival: Portable" $(PARAM_SFO)
 	vita-pack-vpk -s $(PARAM_SFO) -b $(EBOOT) $@ \
 	--add $(EBOOT)=nzp.bin \
 	--add source/platform/psp2/art/sce_sys/icon0.png=sce_sys/icon0.png \

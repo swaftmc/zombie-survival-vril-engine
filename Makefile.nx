@@ -9,7 +9,7 @@ endif
 TOPDIR ?= $(CURDIR)
 include $(DEVKITPRO)/libnx/switch_rules
 
-APP_TITLE	:=	Nazi Zombies Portable
+APP_TITLE	:=	Zombie Survival Portable
 APP_AUTHOR	:=	NZP Team
 APP_VERSION	:=	2.0.0-indev
 ICON        :=  source/platform/nx/art/icon.jpg

@@ -63,7 +63,7 @@ float rsqrt( float number )
 
 	x = number * 0.5f;
 	fa.f = number;	// Virtuous floating point bit level hacking
-	fa.i = 0x5f3759df - (fa.i >> 1);	// what the fuck?
+	fa.i = 0x5f3759df - (fa.i >> 1);	// magic
 	y = fa.f;
 	y = y * (1.5f - (x * y * y));	// first iteration
 

@@ -1004,7 +1004,7 @@ void SV_SendClientMessages (void)
 		}
 
 		// check for an overflowed message.  Should only happen
-		// on a very fucked up connection that backs up a lot, then
+		// on a badly degraded connection that backs up a lot, then
 		// changes level
 		if (host_client->message.overflowed)
 		{
@@ -1577,7 +1577,7 @@ int n_waypoints;
 
 //
 // Load_Waypoint_NZPBETA
-// Attempts to load an NZ:P Beta formatted
+// Attempts to load an ZSP Beta formatted
 // Waypoint file.
 //
 void Load_Waypoint_NZPBETA() {

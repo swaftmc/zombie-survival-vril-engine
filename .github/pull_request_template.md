@@ -32,5 +32,5 @@ Uncomment to run Vril PR tests with specific component branches or commits (will
 ---
 
 - [ ] I have thoroughly tested my changes to the best of my ability
-- [ ] I confirm I have not contributed anything that would impact Nazi Zombies: Portable's licensing and usage
+- [ ] I confirm I have not contributed anything that would impact Zombie Survival: Portable's licensing and usage
 - [ ] This Pull Request fixes a **critical** issue that should be reviewed and merged as soon as possible

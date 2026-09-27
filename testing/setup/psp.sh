@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # PlayStation Portable test code init
 # ----
 # Prepares a testing environment targeting
@@ -66,7 +66,7 @@ function build_ppsspp
 
 function obtain_nzportable
 {
-    print_info "Obtaining latest Nazi Zombies: Portable PSP release.."
+    print_info "Obtaining latest Zombie Survival: Portable PSP release.."
     sleep 0.5
     cd ${working_dir}
     rm -f nzportable-psp.zip

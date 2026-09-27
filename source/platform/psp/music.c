@@ -8,7 +8,7 @@
  * Copyright (c) 2005 Marcus R. Brown <mrbrown@ocgnet.org>
  * Copyright (c) 2005 James Forshaw <tyranid@gmail.com>
  * Copyright (c) 2005 John Kelley <ps2dev@kelley.ca>
- * 2012 dr_mabuse1981: well, i just kicked out Crow_bars shitty and buggy mp3 player
+ * 2012 dr_mabuse1981: well, i just kicked out Crow_bars messy and buggy mp3 player
  * and re-added the kurok one again and added bakers mp3 fix ;)
  *
  * $Id: main.c 1888 2006-05-01 08:47:04Z tyranid $

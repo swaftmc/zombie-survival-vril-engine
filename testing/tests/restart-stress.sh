@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # stress-restart tests
 # ----
 # Validates against memory leaks when running server

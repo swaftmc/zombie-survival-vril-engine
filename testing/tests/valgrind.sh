@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # Valgrind test
 # ----
 # Runs Valgrind on Linux binaries.
@@ -43,14 +43,14 @@ function run_valgrind_test()
 	command=$(run_nzportable "0" "" "${MODE}" "1")
 	echo "[Running: ${command}]"
 
-    # Run NZ:P with Valgrind in background
+    # Run ZSP with Valgrind in background
     set -m
     eval "${command}" > "${launch_log}" 2>&1 &
     pid=$!
     set +m
 
     local duration_seconds=$((VALGRIND_DURATION_MIN * 60))
-    echo "Running NZ:P with Valgrind for [${duration_seconds}] seconds..."
+    echo "Running ZSP with Valgrind for [${duration_seconds}] seconds..."
     sleep "${duration_seconds}"
 
     if kill -0 "${pid}" 2>/dev/null; then

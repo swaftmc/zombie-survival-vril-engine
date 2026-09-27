@@ -1278,7 +1278,7 @@ static void PF_sprintf_append(char **out, size_t *remaining, const char *text)
 
 /*
  * DP_QC_SPRINTF.  QC arguments occupy three globals apiece regardless of
- * their type.  This covers the scalar/string conversions used by NZ:P QC,
+ * their type.  This covers the scalar/string conversions used by ZSP QC,
  * while preserving normal printf flags, widths, and precisions.
  */
 void PF_sprintf (void)

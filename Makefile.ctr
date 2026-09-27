@@ -18,7 +18,7 @@ ICON		:= 	source/platform/ctr/art/icon.png
 #ROMFS		:=	romfs 
 
 APP_AUTHOR 		:= NZ:P Team
-APP_TITLE 		:= Nazi Zombies: Portable
+APP_TITLE 		:= Zombie Survival: Portable
 APP_DESCRIPTION := Call of Duty Zombies remake
 
 #---------------------------------------------------------------------------------

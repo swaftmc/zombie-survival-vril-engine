@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Nazi Zombies: Portable
+# Zombie Survival: Portable
 # Main test runner.
 # ----
 # Kicks off setup, test, then validation scripts.

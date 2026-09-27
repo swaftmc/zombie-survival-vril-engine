@@ -685,7 +685,7 @@ jobs:
           tag_name: bleeding-edge
           release_name: Automated Release ${{ steps.date.outputs.date }}
           body: |
-            This is a **bleeding edge** NZ:P PSP/PSVITA/3DS/NSPIRE/PC release, stability is not guarenteed.
+            This is a **bleeding edge** ZSP PSP/PSVITA/3DS/NSPIRE/PC release, stability is not guarenteed.
 
             To install:
             - Grab the .ZIP archive for your platform
