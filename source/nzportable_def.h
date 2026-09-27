@@ -227,6 +227,56 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #define W_RAYMK2	   60
 #define W_PORTERMK2	   61
 
+// Weapon variants. These ids match the QuakeC roster (source/shared/shared_defs.qc) and are
+// appended there, never renumbered. Each one reuses a shipped silhouette, which is why the
+// HUD tables that name weapons (zoom, crosshair, muzzle flash) list a variant beside the
+// weapon it was built on.
+#define W_HIPOWER		 62
+#define W_MODEL70		 63
+#define W_MAGNUM44		 64
+#define W_COACHGUN		 65
+#define W_SLR			 66
+#define W_GALIL			 67
+#define W_PKM			 68
+#define W_VSS			 69
+#define W_M2CARBINE		 74
+#define W_MP5SD			 75
+#define W_CGM45			 76
+#define W_PSG1			 77
+#define W_MP5KPDW		 78
+#define W_M40A1			 79
+#define W_MOSSBERG		 80
+#define W_MG4			 81
+#define W_VITYAZ		 82
+#define W_SMAW			 83
+#define W_AW50			 84
+#define W_AKS74U		 85
+#define W_F2W			 86
+#define W_DG5			 87
+
+#define W_HIPOWERPAP	 88
+#define W_MODEL70PAP	 89
+#define W_MAGNUM44PAP	 90
+#define W_COACHGUNPAP	 91
+#define W_SLRPAP		 92
+#define W_GALILPAP		 93
+#define W_PKMPAP		 94
+#define W_VSSPAP		 95
+#define W_M2CARBINEPAP	 96
+#define W_MP5SDPAP		 97
+#define W_CGM45PAP		 98
+#define W_PSG1PAP		 99
+#define W_MP5KPDWPAP	 100
+#define W_M40A1PAP		 101
+#define W_MOSSBERGPAP	 102
+#define W_MG4PAP			 103
+#define W_VITYAZPAP		 104
+#define W_SMAWPAP		 105
+#define W_AW50PAP		 106
+#define W_AKS74UPAP		 107
+#define W_F2WPAP		 108
+#define W_DG5PAP			 109
+
 #define W_NOWEP   420
 
 //===========================================

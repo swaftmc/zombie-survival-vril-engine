@@ -1924,21 +1924,30 @@ HUD_GetAlphaForWeaponObjects(void)
 int
 GetLowAmmo(int weapon, int type)
 {
+    // A variant reads its thresholds off the weapon it was built on, so a new pistol,
+    // rifle or shotgun turns its counter red where its donor does.
     switch (weapon) {
+        case W_HIPOWER:
+        case W_HIPOWERPAP:
         case W_COLT: if (type) return 2; else return 16;
 
+        case W_MODEL70:
         case W_KAR: if (type) return 1; else return 10;
 
+        case W_VSS:
         case W_KAR_SCOPE: if (type) return 1; else return 10;
 
+        case W_M2CARBINE:
         case W_M1A1: if (type) return 4; else return 24;
 
         case W_SAWNOFF: if (type) return 1; else return 12;
 
+        case W_COACHGUN:
         case W_DB: if (type) return 1; else return 12;
 
         case W_THOMPSON: if (type) return 6; else return 40;
 
+        case W_GALIL:
         case W_BAR: if (type) return 6; else return 28;
 
         default: return 0;
@@ -2286,11 +2295,23 @@ static int
 HUD_CrosshairWeapon(void)
 {
     switch (cl.stats[STAT_ACTIVEWEAPON]) {
+        case W_HIPOWER:
+        case W_HIPOWERPAP:
+        case W_MAGNUM44:
+        case W_MAGNUM44PAP:
         case W_COLT:
         case W_BIATCH:
         case W_357:
         case W_KILLU: return HUD_CrosshairSpread(22);
 
+        case W_MODEL70:
+        case W_MODEL70PAP:
+        case W_VSS:
+        case W_VSSPAP:
+        case W_M40A1:
+        case W_M40A1PAP:
+        case W_AW50:
+        case W_AW50PAP:
         case W_PTRS:
         case W_PENETRATOR:
         case W_KAR_SCOPE:
@@ -2306,6 +2327,20 @@ HUD_CrosshairWeapon(void)
         case W_SPATZ:
         case W_THOMPSON:
         case W_GIBS:
+        case W_SLR:
+        case W_SLRPAP:
+        case W_GALIL:
+        case W_GALILPAP:
+        case W_MP5SD:
+        case W_MP5SDPAP:
+        case W_CGM45:
+        case W_CGM45PAP:
+        case W_VITYAZ:
+        case W_VITYAZPAP:
+        case W_MP5KPDW:
+        case W_MP5KPDWPAP:
+        case W_AKS74U:
+        case W_AKS74UPAP:
         case W_BAR:
         case W_WIDOW:
         case W_PPSH:
@@ -2321,6 +2356,10 @@ HUD_CrosshairWeapon(void)
         case W_MP5:
         case W_KOLLIDER: return HUD_CrosshairSpread(10);
 
+        case W_PKM:
+        case W_PKMPAP:
+        case W_MG4:
+        case W_MG4PAP:
         case W_BROWNING:
         case W_ACCELERATOR:
         case W_MG:
@@ -2329,11 +2368,19 @@ HUD_CrosshairWeapon(void)
         case W_SAWNOFF:
         case W_SNUFF: return HUD_CrosshairSpread(50);
 
+        case W_MOSSBERG:
+        case W_MOSSBERGPAP:
+        case W_COACHGUN:
+        case W_COACHGUNPAP:
         case W_TRENCH:
         case W_GUT:
         case W_DB:
         case W_BORE: return HUD_CrosshairSpread(35);
 
+        case W_PSG1:
+        case W_PSG1PAP:
+        case W_M2CARBINE:
+        case W_M2CARBINEPAP:
         case W_GEWEHR:
         case W_COMPRESSOR:
         case W_M1:
@@ -2349,6 +2396,28 @@ static int
 HUD_CrosshairMaxSpread(void)
 {
     switch (cl.stats[STAT_ACTIVEWEAPON]) {
+        case W_HIPOWER:
+        case W_HIPOWERPAP:
+        case W_MAGNUM44:
+        case W_MAGNUM44PAP:
+        case W_SLR:
+        case W_SLRPAP:
+        case W_GALIL:
+        case W_GALILPAP:
+        case W_MP5SD:
+        case W_MP5SDPAP:
+        case W_CGM45:
+        case W_CGM45PAP:
+        case W_VITYAZ:
+        case W_VITYAZPAP:
+        case W_MP5KPDW:
+        case W_MP5KPDWPAP:
+        case W_AKS74U:
+        case W_AKS74UPAP:
+        case W_PKM:
+        case W_PKMPAP:
+        case W_MG4:
+        case W_MG4PAP:
         case W_COLT:
         case W_BIATCH:
         case W_STG:
@@ -2378,6 +2447,14 @@ HUD_CrosshairMaxSpread(void)
         case W_TYPE:
         case W_SAMURAI: return HUD_CrosshairSpread(48);
 
+        case W_MODEL70:
+        case W_MODEL70PAP:
+        case W_VSS:
+        case W_VSSPAP:
+        case W_M40A1:
+        case W_M40A1PAP:
+        case W_AW50:
+        case W_AW50PAP:
         case W_PTRS:
         case W_PENETRATOR:
         case W_KAR_SCOPE:
@@ -2390,6 +2467,14 @@ HUD_CrosshairMaxSpread(void)
         case W_SAWNOFF:
         case W_SNUFF: return HUD_CrosshairSpread(50);
 
+        case W_COACHGUN:
+        case W_COACHGUNPAP:
+        case W_MOSSBERG:
+        case W_MOSSBERGPAP:
+        case W_PSG1:
+        case W_PSG1PAP:
+        case W_M2CARBINE:
+        case W_M2CARBINEPAP:
         case W_DB:
         case W_BORE:
         case W_TRENCH:

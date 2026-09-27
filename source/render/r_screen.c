@@ -666,15 +666,23 @@ int GetWeaponZoomAmount (void)
 {
     switch (cl.stats[STAT_ACTIVEWEAPON])
     {
+        case W_HIPOWER:
+        case W_HIPOWERPAP:
         case W_COLT:
             return 10;
 			break;
+		case W_M40A1:
+		case W_M40A1PAP:
+		case W_MODEL70:
+		case W_MODEL70PAP:
 		case W_SPRING:
 		case W_PULVERIZER:
 		case W_KAR:
 		case W_ARMAGEDDON:
 			return 25;
 			break;
+		case W_VSS:
+		case W_VSSPAP:
 		case W_KAR_SCOPE:
 		case W_HEADCRACKER:
 			return 47;
@@ -683,51 +691,75 @@ int GetWeaponZoomAmount (void)
 		case W_GIBS:
 			return 10;
 			break;
+		case W_MOSSBERG:
+		case W_MOSSBERGPAP:
 		case W_TRENCH:
 		case W_GUT:
 			return 10;
 			break;
+		case W_MAGNUM44:
+		case W_MAGNUM44PAP:
 		case W_357:
 		case W_KILLU:
 			return 5;
 			break;
+		case W_MG4:
+		case W_MG4PAP:
 		case W_MG:
 		case W_BARRACUDA:
 			return 15;
 			break;
+		case W_COACHGUN:
+		case W_COACHGUNPAP:
 		case W_DB:
 		case W_BORE:
 		case W_SAWNOFF:
 			return 10;
 			break;
+		case W_M2CARBINE:
+		case W_M2CARBINEPAP:
 		case W_M1A1:
 		case W_WIDDER:
 			return 20;
 			break;
+		case W_GALIL:
+		case W_GALILPAP:
 		case W_BAR:
 		case W_WIDOW:
 			return 30;
 			break;
+		case W_SLR:
+		case W_SLRPAP:
 		case W_FG:
 		case W_IMPELLER:
 			return 30;
 			break;
+		case W_PSG1:
+		case W_PSG1PAP:
 		case W_GEWEHR:
 		case W_COMPRESSOR:
 			return 25;
 			break;
+		case W_VITYAZ:
+		case W_VITYAZPAP:
 		case W_PPSH:
 		case W_REAPER:
 			return 10;
 			break;
+		case W_MP5SD:
+		case W_MP5SDPAP:
 		case W_MP40:
 		case W_AFTERBURNER:
 			return 10;
 			break;
+		case W_MP5KPDW:
+		case W_MP5KPDWPAP:
 		case W_MP5:
 		case W_KOLLIDER:
 			return 10;
 			break;
+		case W_AKS74U:
+		case W_AKS74UPAP:
 		case W_STG:
 		case W_SPATZ:
 			return 20;
@@ -736,14 +768,20 @@ int GetWeaponZoomAmount (void)
 		case W_M1000:
 			return 25;
 			break;
+		case W_PKM:
+		case W_PKMPAP:
 		case W_BROWNING:
 		case W_ACCELERATOR:
 			return 15;
 			break;
+		case W_AW50:
+		case W_AW50PAP:
 		case W_PTRS:
 		case W_PENETRATOR:
 			return 50;
 			break;
+		case W_CGM45:
+		case W_CGM45PAP:
 		case W_TYPE:
 		case W_SAMURAI:
 			return 10;

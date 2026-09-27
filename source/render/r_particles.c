@@ -2157,6 +2157,31 @@ pap_detr(int weapon)
         case W_AFTERBURNER:
         case W_SPATZ:
         case W_SNUFF:
+        // Weapon variants carry their own upgraded id, so the upgraded half of every pair
+        // is named here as well: that is what gives them the alternating Pack-a-Punch
+        // muzzle flash.
+        case W_HIPOWERPAP:
+        case W_MODEL70PAP:
+        case W_MAGNUM44PAP:
+        case W_COACHGUNPAP:
+        case W_SLRPAP:
+        case W_GALILPAP:
+        case W_PKMPAP:
+        case W_VSSPAP:
+        case W_M2CARBINEPAP:
+        case W_MP5SDPAP:
+        case W_CGM45PAP:
+        case W_PSG1PAP:
+        case W_MP5KPDWPAP:
+        case W_M40A1PAP:
+        case W_MOSSBERGPAP:
+        case W_MG4PAP:
+        case W_VITYAZPAP:
+        case W_SMAWPAP:
+        case W_AW50PAP:
+        case W_AKS74UPAP:
+        case W_F2WPAP:
+        case W_DG5PAP:
         case W_BORE:
         case W_IMPELLER:
         case W_BARRACUDA:
@@ -2198,8 +2223,10 @@ QMB_MuzzleFlashColor(int *red, int *green, int *blue)
 	switch (cl.stats[STAT_ACTIVEWEAPON]) {
         case W_RAY: case W_RAYMK2: *red = 30; *green = 255; *blue = 60; break;
         case W_PORTER: case W_PORTERMK2: *red = 255; *green = 35; *blue = 80; break;
-        case W_TESLA: *red = 22; *green = 139; *blue = 255; break;
-        case W_DG3: *red = 255; *green = 89; *blue = 22; break;
+        case W_TESLA: case W_DG5: *red = 22; *green = 139; *blue = 255; break;
+        case W_DG3: case W_DG5PAP: *red = 255; *green = 89; *blue = 22; break;
+        // the cryo projector throws a cold flash where the flamethrower throws fire
+        case W_F2W: case W_F2WPAP: *red = 120; *green = 220; *blue = 255; break;
 	}
 }
 
